@@ -24,5 +24,3 @@ createFakeData(10, () => {
 });
 
 await saveToFile(JSON.stringify(lexiconStudents), 'fake-NA21-students.json');
-
-// console.log(lexiconStudents);
