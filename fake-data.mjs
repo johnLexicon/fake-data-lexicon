@@ -21,7 +21,7 @@ export const qualifications = [
   'Django'
 ];
 
-export const createLexiconStudent = (coursePeriodId, courseCode) => {
+export const createLexiconStudent = (coursePeriodId) => {
   const female = Math.floor(Math.random() * 10) + 1 > 7;
   const finishedCourse = Math.floor(Math.random() * 10) + 1 < 2;
   const finishedAPL = Math.floor(Math.random() * 10) + 1 < 8;
@@ -49,7 +49,6 @@ export const createLexiconStudent = (coursePeriodId, courseCode) => {
       qualifications,
       qualifications.length - 4
     ),
-    coursePeriodId: coursePeriodId,
-    courseCode: courseCode
+    coursePeriodId: coursePeriodId
   };
 };
